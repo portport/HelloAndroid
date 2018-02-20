@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:src="@drawable/adamcursor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"/>
+
+
+    <ImageView
+        android:src="@drawable/udacity"
+        android:layout_width="wrap_content"
+        android:layout_height="260dp"
+        android:layout_alignParentBottom="true"
+        android:scaleX="0.9"
+        android:scaleY="0.9"
+        android:cropToPadding="true"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp" />
+
+    <TextView
+        android:id="@+id/secondline"
+        android:text="@string/tv_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:fontFamily="sans-serif"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/black"
+        android:paddingLeft="10dp"
+        android:layout_above="@id/thirdline"/>
+
+    <TextView
+        android:id="@+id/thirdline"
+        android:text="@string/tv_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/lastline"
+        android:layout_centerHorizontal="true"
+        android:textSize="15sp"
+        android:fontFamily="sans-serif"
+        android:textColor="@android:color/black"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp" />
+
+    <TextView
+        android:id="@+id/lastline"
+        android:text="650-555-5555"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="15sp"
+        android:fontFamily="sans-serif"
+        android:textColor="@android:color/black"
+        android:padding="10dp"
+        android:autoLink="phone"/>
+
+</RelativeLayout>
+
